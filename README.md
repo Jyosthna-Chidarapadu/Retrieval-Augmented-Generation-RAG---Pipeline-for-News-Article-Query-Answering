@@ -1,4 +1,4 @@
-# Retrieval-Augmented-Generation-RAG---Pipeline-for-News-Article-Query-Answering
+# Retrieval-Augmented-Generation-RAG-Pipeline-for-News-Article-Query-Answering
 # Evaluating RAG-Based QA on News Data with BLEURT
 
 This project evaluates Retrieval-Augmented Generation (RAG) systems for news-based question answering using Zephyr-7B, FLAN-T5, and LLaMA2 models with BLEURT metric.
@@ -20,7 +20,8 @@ This project evaluates Retrieval-Augmented Generation (RAG) systems for news-bas
 
 ## 🛠️ Technical Implementation
 
-Components
+**Components**
+
 Data Processing
 
 Dataset: News Category Dataset (JSON)
@@ -29,7 +30,7 @@ Preprocessing: Lowercasing, deduplication, null removal
 
 Tools: Pandas, LangChain DataFrameLoader
 
-Retrieval System
+**Retrieval System**
 
 Embedding Model: all-mpnet-base-v2
 
@@ -37,7 +38,7 @@ Vector DB: ChromaDB with local persistence
 
 Retrieval: Top-5 similar chunks
 
-Models
+**Models**
 
 Zephyr-7B-beta (7B params)
 
@@ -45,25 +46,11 @@ FLAN-T5-large (780M params)
 
 LLaMA2-7B-chat (7B params)
 
-Evaluation
+**Evaluation**
 
 Metric: BLEURT-20
 
 Comparison: RAG vs non-RAG performance
-
-📂 Repository Structure
-├── data_processing/
-│   ├── data_loader.py
-│   └── preprocessing.py
-├── model_pipelines/
-│   ├── zephyr_qa.py
-│   ├── llama_qa.py
-│   └── flan_t5_qa.py
-├── evaluation/
-│   └── bleurt_scoring.py
-├── assets/              # Output screenshots
-├── reports/             # Project report
-└── requirements.txt
 
 🚀 Installation
 bash
